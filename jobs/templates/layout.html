@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Job Board</title>
+    <link rel="icon" href="https://dotown.maeda-design-room.net/wp-content/uploads/2022/01/food_hamburger_01.png">
+
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/bulma.min.css') }}">     <!--Add the Bulma CSS Framework-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  </head>
+
+  <body>
+    <div class="container top">
+      <div class="content">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
